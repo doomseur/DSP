@@ -26,9 +26,9 @@ const webSocketHandler = require('./app/util/ws_handler.js');
 const localConfig = require('./config/local.config.json');
 const healthChecker = require('./app/util/HealthLabState.js');
 const errorHandler = require('express-error-handler');
-
+// Setting DSP_IFACE to 0.0.0.0 to have access to it outside the container
 const port = +process.env.PORT || 18181;
-const host = process.env.DSP_IFACE || "127.0.0.1";
+const host = process.env.DSP_IFACE || "0.0.0.0";
 // var upload = multer({ dest: "uploads/" });
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
