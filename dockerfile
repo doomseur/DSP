@@ -15,9 +15,6 @@ RUN apt-get update && apt-get install -y \
 # Copy the source in the DSP directory
 COPY ./. opt/DSP
 
-# Clone the DSP repository 
-# RUN git clone https://github.com/DockerSecurityPlayground/DSP.git /opt/DSP
-
 WORKDIR /opt/DSP
 
 # Install backend dependencies
