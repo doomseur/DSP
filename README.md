@@ -72,6 +72,8 @@ To start the application. This will launch a server listening on 18181 (or anoth
 
 
 With your favourite browser go to http://localhost:18181. You'll be redirected on installation page, set parameters and click install.     
+## Run DSP in virtual machine - expose on 0.0.0.0 interface 
+
 I suggest you to run dsp on a Ubuntu virtual machine and expose on 0.0.0.0 interface.  
 If you want to expose on another interface, change DSP_IFACE environment variable:
 ```
